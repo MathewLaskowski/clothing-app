@@ -3,14 +3,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyBdB7a3pC0KGxWxQYhkbma39Cz1seyvzrs",
-  authDomain: "clothing-db-db204.firebaseapp.com",
-  databaseURL: "https://clothing-db-db204.firebaseio.com",
-  projectId: "clothing-db-db204",
-  storageBucket: "clothing-db-db204.appspot.com",
-  messagingSenderId: "1055433696517",
-  appId: "1:1055433696517:web:994fac1a3076bd4559836c",
-  measurementId: "G-6PW4V821X3"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKER,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASURMENT_ID
 };
 
 firebase.initializeApp(config);
