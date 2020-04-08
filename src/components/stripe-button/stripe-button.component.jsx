@@ -23,7 +23,7 @@ const StripeCheckoutButton = ({ price }) => {
       token={onToken}
       stripeKey={publishableKey}
     />
-  )
+  );
 };
 
-export default StripeCheckoutButton
+export default StripeCheckoutButton;
