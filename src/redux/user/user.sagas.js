@@ -100,7 +100,7 @@ export function* onSignOutStart() {
 }
 
 export function* onSignUpStart() {
-  yield takeLatest(UserActionTypes.SIGN_UP_START_START, signUp)
+  yield takeLatest(UserActionTypes.SIGN_UP_START, signUp)
 }
 
 export function* onSignUpSuccess() {
